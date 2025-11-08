@@ -1,5 +1,4 @@
-# FILE 1: config.py
-# Save this as: config.py
+# config.py - Configuration & Settings
 
 import os
 from dotenv import load_dotenv
@@ -32,7 +31,7 @@ SUBTITLE_FORMATS = ['.srt', '.ass', '.vtt', '.sub', '.ssa']
 # ========== FEATURE FLAGS ==========
 ENABLE_STATS = True
 ENABLE_USER_LIMITS = True
-FREE_USER_DAILY_LIMIT = 5
+FREE_USER_DAILY_LIMIT = 5  # Operations per day for free users
 PREMIUM_USER_DAILY_LIMIT = 50
 
 # ========== MESSAGES ==========
@@ -40,14 +39,20 @@ WELCOME_MESSAGE = """
 🎬 <b>Professional Media Processor Bot v3.0</b>
 
 <b>✨ Complete Features:</b>
-📝 Merge subtitles to video
+📝 Merge subtitles to video (burn-in)
 📤 Extract subtitles from video
 🎵 Extract audio from video
 🔇 Remove audio from video
 🎶 Merge audio to video
 🔄 Replace audio in video
 
-<b>📊 Your Stats:</b>
+<b>📊 Specifications:</b>
+• Max file size: 4GB
+• High-quality processing
+• Fast FFmpeg encoding
+• Multi-format support
+
+<b>🎯 Your Stats:</b>
 Operations today: {operations_today}/{daily_limit}
 Total operations: {total_operations}
 Member since: {join_date}
